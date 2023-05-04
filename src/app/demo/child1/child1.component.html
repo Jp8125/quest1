@@ -1,0 +1,5 @@
+<div *ngFor="let item of list">
+<p>{{item.id}}</p>
+<p> <a [routerLink]="['list',item.id]">more info</a> </p>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,7 @@
+<form action="" [formGroup]="student">
+<input type="text" placeholder="nname" formControlName="name">
+<small *ngIf="name?.errors?.['required']">enter id</small>
+<input type="number" placeholder="id" formControlName="id">
+<small *ngIf="id?.errors?.['required']">enter name</small>
+</form>
+{{student.value|json}}
